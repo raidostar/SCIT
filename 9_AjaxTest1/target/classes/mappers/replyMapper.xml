@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="global.sesoc.test9.dao.ReplyMapper">
+	<insert id="insert" parameterType="Reply">
+		insert into reply3 values(
+			reply3_seq.nextval,
+			#{userid},
+			#{replytext},
+			sysdate
+		)		
+	</insert>
+	
+	<select id="select" resultType="Reply">
+		select
+			replynum,
+			userid,
+			replytext,
+			to_char(regdate, 'YYYY-MM-DD') as regdate
+		from reply3
+		order by replynum desc
+	</select>
+	
+	<delete id="delete" parameterType="int">
+		delete from reply3
+		where 
+			replynum=#{replynum}
+	</delete>
+  </mapper>
