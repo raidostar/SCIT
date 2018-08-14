@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>code here</title>
 <script src="resources/jquery-3.3.1.min.js"></script>
 <script>
 	$(function() {
