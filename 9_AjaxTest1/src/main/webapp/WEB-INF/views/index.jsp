@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>code here</title>
+<title>code2here</title>
 <script src="resources/jquery-3.3.1.min.js"></script>
 <script>
 	$(function() {
